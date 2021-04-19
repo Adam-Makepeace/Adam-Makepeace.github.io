@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>Atom-Markdown 写作测试</title>
+    <link href="/2021/04/19/atomtest/"/>
+    <url>/2021/04/19/atomtest/</url>
+    
+    <content type="html"><![CDATA[<h1 id="关于标题"><a href="#关于标题" class="headerlink" title="关于标题"></a>关于标题</h1><p>用“#（多个）+空格+标题内容”号来表示标题。只有前两级标题可以在网页排版当中显示出来，二级标题不会主动显示。好像三级标题也能显示了。<br>#这是一级标题<br>##这是二级标题<br>###这是三级标题<br>####4<br>#####5<br>######最多可以到六级标题</p><h1 id="关于写作的基本格式"><a href="#关于写作的基本格式" class="headerlink" title="关于写作的基本格式"></a>关于写作的基本格式</h1><h2 id="换行（好像没啥用）"><a href="#换行（好像没啥用）" class="headerlink" title="换行（好像没啥用）"></a>换行（好像没啥用）</h2><p>  好像atom编辑器本身并不会采取一种比较好的换行方式，直接换行就行了（文本好长的）。不过写到头应该是会自动换行的。所以不用管了。<br>  这里的竖直方向的分割线基本上等于Markdown在网页当中显示的分割线了。</p><h2 id="特殊文字标注"><a href="#特殊文字标注" class="headerlink" title="特殊文字标注"></a>特殊文字标注</h2><pre><code>*Italic*</code></pre><p><em>Italic</em></p><pre><code>**Bold**</code></pre><p><strong>Bold</strong></p><pre><code>***ItalicBold***</code></pre><p><em><strong>ItalicBold</strong></em></p><pre><code>&lt;u&gt;Underline&lt;/u&gt;</code></pre><p><u>Underline</u></p><pre><code>~~Deleted~~</code></pre><p><del>Deleted</del></p><p>转义字符\</p><h2 id="尾注"><a href="#尾注" class="headerlink" title="尾注"></a>尾注</h2><pre><code>[^a]进行注释[^a]:进行说明</code></pre><p>不管我在编写Markdown的时候把它放在什么地方，它都会出现在结尾。<br>马基雅维利反对当时的共和主义者<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="参见(Skinner,1997).">[1]</span></a></sup>，认为共和国无法实现内部的和平。相反，以欲望作为基础，马基雅维利说明了纷争在共和国当中的不可避免。</p><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>用***或—来标记分割线<br>大概是下面这个样子：</p><hr><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul><li>列表一级标题<ul><li>列表二级标题（注意是四个空格）</li></ul><ul><li>列表二级标题（也可以用“-”）</li></ul><ul><li>列表二级标题（“+”也可以）</li></ul><ol><li>这个是有序列表，使用数字+.+空格。在网页里这里显示的是“i”而不是“1”</li></ol></li></ul><h2 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h2><blockquote><p>Block 1，用“&gt;”来表示</p><blockquote><p>Block 2，中间空了一格</p></blockquote></blockquote><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#可以指定或不指定语言。这里指定了Python</span><br><span class="hljs-comment">#它好像还会在Atom里面把Python的正确语法显示出来。</span><br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hallo, Welt!&quot;</span>)<br></code></pre></td></tr></table></figure><h3 id="反引号"><a href="#反引号" class="headerlink" title="反引号"></a>反引号</h3><p>使用反引号来表明代码段落。例如：<br><code>print()</code></p><h3 id="另一种使用代码块的方式：四个空格"><a href="#另一种使用代码块的方式：四个空格" class="headerlink" title="另一种使用代码块的方式：四个空格"></a>另一种使用代码块的方式：四个空格</h3><pre><code>*I’m not italic. Atom is wrong.*</code></pre><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><pre><code>[链接名称](链接地址)例如：[百度](https://www.baidu.com)  在网页中仅仅显示名称</code></pre><p><a href="https://www.baidu.com/">百度</a></p><pre><code>也可以使用&lt;https://www.baidu.com&gt;直接表示链接地址在网页中仅仅显示链接</code></pre><p><a href="https://www.baidu.com/">https://www.baidu.com</a></p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><pre><code>![Bildname](site &quot;Bildunterschrift [Optional]&quot;)</code></pre><p><img src="https://unsplash.com/photos/MKXyRm-pK50" alt="Bild" title="Blog Cover,circa. 2021"></p><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><pre><code>| 左对齐-表头 | 中间对齐-表头 | 右对齐-表头 || :---- | :----: |----:||12123|123|123||233|233|233|</code></pre><table><thead><tr><th align="left">左对齐-表头</th><th align="center">中间对齐-表头</th><th align="right">右对齐-表头</th></tr></thead><tbody><tr><td align="left">12123</td><td align="center">123</td><td align="right">123</td></tr><tr><td align="left">233</td><td align="center">233</td><td align="right">233</td></tr></tbody></table><p>其他内容参见：<a href="https://www.runoob.com/markdown/md-advance.html">菜鸟教程</a></p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>参见(Skinner,1997).<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>test</tag>
+      
+      <tag>Markdown Preview</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Bloginfo</title>
     <link href="/2021/04/18/Bloginfo/"/>
     <url>/2021/04/18/Bloginfo/</url>
@@ -11,6 +32,12 @@
     <content type="html"><![CDATA[]]></content>
     
     
+    
+    <tags>
+      
+      <tag>test</tag>
+      
+    </tags>
     
   </entry>
   
